@@ -12,7 +12,7 @@ import Firebase
 
 var isSigningIn = true
 
-class loginVC: UIViewController {
+class LoginVC: UIViewController {
 
     // The handler for the auth state listener, to allow cancelling later
     
@@ -50,7 +50,7 @@ class loginVC: UIViewController {
         
         guard let email = emailTF.text, let pass = passwordTF.text else {
             //self.createSimpleAlert(title: "Error", message: "Username or password incorrect.")
-            print("Invalid Credentials")
+            print("Invalid input")
             return
         }
         
@@ -63,7 +63,7 @@ class loginVC: UIViewController {
             guard (user?.uid) != nil else {
                 
                 //self.createSimpleAlert(title: "Error", message: "Username or password incorrect.")
-                print("uid is null")
+                print("Invalid credentials")
                 return
             }
             
@@ -85,8 +85,8 @@ class loginVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
+
+        // Prepare for initial view
         initView()
     }
     

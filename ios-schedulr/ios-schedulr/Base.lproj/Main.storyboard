@@ -13,7 +13,7 @@
         <!--LoginVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="loginVC" customModule="ios_schedulr" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginVC" customModule="ios_schedulr" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -81,9 +81,41 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="89.505247376311857"/>
+            <point key="canvasLocation" x="-54" y="-371"/>
         </scene>
-        <!--Item 2-->
+        <!--Settings-->
+        <scene sceneID="ekS-vU-9fk">
+            <objects>
+                <viewController id="ROS-Wk-Uzt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cTP-rS-Aml">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="dHZ-dw-bA7"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" id="nvi-2V-Tvl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rIH-aX-zdU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1759" y="1331"/>
+        </scene>
+        <!--Portfolio-->
+        <scene sceneID="jzv-ew-I3Q">
+            <objects>
+                <viewController id="A0F-HO-0t5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="alB-hx-k0I">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="yRd-H4-9mq"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Portfolio" id="QxE-Ba-8QO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FSs-Em-c3d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="626" y="1572"/>
+        </scene>
+        <!--Appointments-->
         <scene sceneID="ISD-8j-N2e">
             <objects>
                 <viewController id="dwQ-Bi-gvh" sceneMemberID="viewController">
@@ -93,27 +125,27 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="9NX-zD-cU0"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="bUW-XV-2ZN"/>
+                    <tabBarItem key="tabBarItem" title="Appointments" id="bUW-XV-2ZN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QUc-l0-bXx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2106" y="387"/>
+            <point key="canvasLocation" x="-385" y="1515"/>
         </scene>
-        <!--Item 1-->
+        <!--Calendar-->
         <scene sceneID="9WY-ut-In2">
             <objects>
-                <viewController id="ZZ7-XU-1z2" sceneMemberID="viewController">
+                <viewController id="ZZ7-XU-1z2" customClass="CalendarVC" customModule="ios_schedulr" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XOV-Sh-2eT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="nIr-AV-1n2"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="r2d-ND-8jJ"/>
+                    <tabBarItem key="tabBarItem" title="Calendar" id="r2d-ND-8jJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rQc-Kf-jWG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2106" y="-279"/>
+            <point key="canvasLocation" x="-1438" y="1331"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="e1K-6C-HOF">
@@ -127,11 +159,13 @@
                     <connections>
                         <segue destination="ZZ7-XU-1z2" kind="relationship" relationship="viewControllers" id="VMj-fX-GFV"/>
                         <segue destination="dwQ-Bi-gvh" kind="relationship" relationship="viewControllers" id="hO3-CD-6tX"/>
+                        <segue destination="A0F-HO-0t5" kind="relationship" relationship="viewControllers" id="GNE-iv-cjJ"/>
+                        <segue destination="ROS-Wk-Uzt" kind="relationship" relationship="viewControllers" id="JHF-cR-dc4"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dOa-HX-mp2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1155" y="54"/>
+            <point key="canvasLocation" x="-55" y="627"/>
         </scene>
     </scenes>
 </document>
